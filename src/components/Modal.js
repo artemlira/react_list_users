@@ -11,7 +11,7 @@ export default function Modal({ modal, setModal, addUser, setAddUser }) {
             <h3>New visitor</h3>
             <p className="close" onClick={() => { setModal(null) }}>X</p>
          </div>
-         <ModalForm addUser={addUser} setAddUser={setAddUser} />
+         <ModalForm addUser={addUser} setAddUser={setAddUser} setModal={setModal} />
 
       </div>
    );
