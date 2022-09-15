@@ -23,17 +23,18 @@ function App() {
 
 
    return (
-      <>
-         <h2>Список користувачів</h2>
-         <Form modal={modal} setModal={setModal} />
-
+      <div className="wrapper">
+         <div className="container">
+            <h2 className="title">Список користувачів</h2>
+            <Form modal={modal} setModal={setModal} />
+         </div>
          <List addUser={addUser} />
          <Modal
             modal={modal}
             setModal={setModal}
             addUser={addUser}
             setAddUser={setAddUser} />
-      </>
+      </div>
    );
 }
 

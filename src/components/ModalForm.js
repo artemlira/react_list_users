@@ -23,11 +23,17 @@ export default function ModalForm({ addUser, setAddUser, setModal }) {
 
    return (
       <form>
-         <label>Name</label>
-         <input type='text' ref={userRef} />
-         <label>Phone</label>
-         <input type='tel' ref={phoneRef} />
-         <input type='button' value="save" onClick={addUsers} />
+         <div className="name">
+            <label>Ім'я</label>
+            <input type='text' ref={userRef} />
+         </div>
+         <div className="phone">
+            <label>Номер телефону</label>
+            <input type='tel' ref={phoneRef} />
+         </div>
+         <div className="button">
+            <input type='button' value="save" onClick={addUsers} />
+         </div>
       </form>
    );
 }
